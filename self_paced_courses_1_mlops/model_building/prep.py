@@ -17,11 +17,11 @@ df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
 # Drop the unique identifier
-df.drop(columns=['UDI'], inplace=True)
+#df.drop(columns=['UDI'], inplace=True)
 
 # Encoding the categorical 'Type' column
-label_encoder = LabelEncoder()
-df['Type'] = label_encoder.fit_transform(df['Type'])
+#label_encoder = LabelEncoder()
+#df['Type'] = label_encoder.fit_transform(df['Type'])
 
 target_col = 'class'
 
